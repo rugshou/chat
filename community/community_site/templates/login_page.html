@@ -1,0 +1,29 @@
+<h1 class="fs-1 absolute login_top center" id="abc">Login</h1>
+    <form class="absolute form_top center" method="POST">
+      {% csrf_token %}
+        <div class="mb-3 relative text center">
+          <label class="form-label">ユーザーID</label>
+          {{ form.username }}
+        　{{ form.username.errors }}
+        </div>
+        <div class="mb-3 relative text center">
+          <label id="exampleDropdownFormUserID2" class="form-label">パスワード</label>
+          {{ form.password }}
+          {{ form.password.errors }}
+        </div>
+        {% if form.errors  %}
+        <div class="mb-3 relative disagreement center">
+            <p class="form-label">ユーザーID, パスワードが一致しません．</p>
+        </div>
+        {% endif %}
+        <div class="link_bt">
+            <a href="../" class="relative">パスワードを忘れた場合</a>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-primary relative center login_button">Login</button>
+        </div>
+        <div class="link_bt">
+            <a href="../create/" class="relative new_account">アカウント作成</a>
+        </div>
+    </form>

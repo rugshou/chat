@@ -1,0 +1,117 @@
+.account_label{
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: rgb(72, 241, 21);
+    top: 2em;
+    padding: 0.1em;
+    border-bottom: solid 3px #f50a0a;/*下線*/
+}
+
+.error_msg {
+    color: #fc0505;
+}
+
+.form {
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 22em;
+}
+form.form{
+    background-color:aliceblue;
+    width: 50%;
+
+}
+.account_name {
+    position: relative;
+    margin-top: 8px;
+    margin-left: 5%;
+}
+
+.last_name {
+    position: relative;
+    margin-top: 8px;
+    margin-left: 5%;
+}
+.text_label {
+    font-weight: 700;
+}
+
+.first_name {
+    position: absolute;
+    margin-top: 8px;
+    left: 55%;
+}
+
+#first_name-1_label {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 9%;
+}
+
+.create_account {
+    position: relative;
+    width: 90%;
+    height: 40px;
+    margin-top: 8px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border-radius:10px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(250, 166, 39);
+    border: 1px solid rgb(0, 0, 0);
+}
+.create_account:hover{
+    background-color: rgb(222, 139, 14);
+}
+.create_account:focus{
+    background-color: rgb(247, 211, 9);
+}
+
+input[class*="name_box"] {
+    width: 40%;
+}
+
+input[class*="account_box"] {
+    width: 90%;
+}
+input[class*="text_box"] {
+    font-size: 16px;
+    height: 30px;
+    border: none;
+    outline: solid 1px #c2c2c2;
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    background-color:rgb(255, 255, 255);
+    border-radius:10px;
+    padding-left: 10px
+}
+input[class*="name_box"]:focus {
+    width: 40%;
+}
+input[class*="text_box"]:focus{
+    font-size: 16px;
+    height: 30px;
+    border: none;
+    outline: solid 5px #b7d7fd;
+    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    background-color:rgb(255, 255, 255);
+    border-radius:10px;
+    padding-left: 10px;
+}
+
+input[class*="name_box"]:focus + .text_underline::before,
+input[class*="name_box"]:focus + .text_underline::after{
+    width: 50%;
+}
+
+
+.field-invalid::before {
+	content: "このフィールドは必須です。";
+	display: block;
+	color: red;
+}
+.field-invalid input.field-required,
+.field-invalid textarea.field-required {
+	border: 1px solid red;
+}

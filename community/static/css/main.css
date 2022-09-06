@@ -1,0 +1,44 @@
+.center {
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+form.center{
+    background-color:aliceblue;
+    width: 50%;
+}
+.disagreement {
+    width: 80%;
+    top: 1em;
+    color: red
+}
+.text{
+    width: 80%;
+    top: 3em;
+}
+.login_button{
+    top: 2em;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.login_top {
+    top: 2em;
+    color: rgb(72, 241, 21);
+    padding: 0.1em;
+    border-bottom: solid 3px #f50a0a;/*下線*/
+}
+
+.form_top {
+    top: 17em;
+}
+.new_account {
+    color: rgb(38, 243, 16);
+    top: 2em;
+}
+.link_bt {
+    text-align: center;
+}

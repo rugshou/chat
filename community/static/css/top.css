@@ -1,0 +1,88 @@
+.main_top {
+    color: rgb(72, 241, 21);
+    padding: 0.1em;
+    border-bottom: solid 3px #f50a0a;/*下線*/
+}
+.detail {
+    background-color:aliceblue;
+    width: 20%;
+    left: 75%
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.account {
+    margin-top: 2px;
+    list-style: none;
+}
+.list {
+    list-style: none;
+}
+
+/* 親メニュー - Parent nav */
+nav > ul > li {
+  position: relative;
+  float: left;
+  margin-right: 45px;
+}
+nav a {
+  color: #0bd;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: #0090aa;
+}
+
+/* 子メニュー - .sub-menu */
+nav .sub-menu {
+  position: absolute;
+  width: 180px;
+  background: #0bd;
+  top: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+nav .sub-menu a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+}
+nav .sub-menu a:hover {
+  color: #fff;
+}
+
+/* ホバーで子メニュー表示 */
+nav .menu-item-has-children:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+nav li.menu-item-has-children li a:hover {
+  background: #0090aa;
+}
+.massage {
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 40em;
+    }
+.text_box {
+    width:10%;
+    }
+.send_button {
+    position: relative;
+    border-radius:10px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(250, 166, 39);
+    border: 1px solid rgb(0, 0, 0);
+    color:black;
+}
+.send_button:hover{
+    background-color: rgb(222, 139, 14);
+}
+.send_button:focus{
+    background-color: rgb(247, 211, 9);
+}
